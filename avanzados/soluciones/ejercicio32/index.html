@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solución 32: Proyecto final: catálogo con favoritos</title>
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Solución 32: Proyecto final: catálogo con favoritos</h1>
+    <p class="ayuda">Solución de referencia. Compárala con tu programa y comprueba los casos del README.md.</p>
+    <label for="origen">Catálogo de prueba</label><select id="origen"><option value="datos/productos.json">Catálogo local</option><option value="datos/vacio.json">Catálogo vacío</option><option value="datos/no-existe.json">Simular HTTP 404</option></select><button id="cargar" type="button">Cargar / reintentar</button><label for="busqueda">Filtrar por nombre</label>
+<input id="busqueda" type="text" ><label><input id="disponibles" type="checkbox"> Solo con stock</label><label><input id="soloFavoritos" type="checkbox"> Solo favoritos</label><ul id="lista"></ul>
+    <div id="salida" role="status" aria-live="polite">Esperando tu programa.</div>
+  </main>
+</body>
+</html>
